@@ -5,7 +5,7 @@
 
 	setInterval(() => {
 		if (Date.now() - time > 1000) {
-			console.warn('INTERVAL THROTTLE', Date.now() - time);
+			console.warn(`[${new Date().toISOString()}]`, 'INTERVAL THROTTLE', Date.now() - time);
 		}
 
 		time = Date.now();
